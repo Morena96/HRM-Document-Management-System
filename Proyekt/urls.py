@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
-
-urlpatterns = [
+from django.conf.urls.i18n import i18n_patterns
+urlpatterns =i18n_patterns (
     path('', admin.site.urls),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    prefix_default_language=False
+ ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
