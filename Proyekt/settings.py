@@ -27,19 +27,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'tr'
 
 LANGUAGES = [
     ('tr','Turkce'),
-    ('ru-RU','Russian'),
-    ('tk','Turkmen'),
+    ('ru','Russian'),
 ]
 USE_I18N = True
 USE_L10N = True
 
 TIME_ZONE = 'UTC'
 
-USE_TZ = False
+USE_TZ = True
 
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 print(LOCALE_PATHS)
@@ -74,7 +73,7 @@ ROOT_URLCONF = 'Proyekt.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
