@@ -27,12 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'tr'
 
 LANGUAGES = [
     ('tr','Turkce'),
-    ('ru-RU','Russian'),
-    ('tk','Turkmen'),
+    ('ru','Russian'),
 ]
 USE_I18N = True
 USE_L10N = True
@@ -41,10 +40,14 @@ TIME_ZONE = 'UTC'
 
 USE_TZ = True
 
+<<<<<<< HEAD
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'local')]
 print(LOCALE_PATHS)
 # Application definition
 
+=======
+LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
+>>>>>>> my-temporary-work
 AUTH_USER_MODEL = "Dokument_Dolanysygy.Ulanyjy" 
 
 INSTALLED_APPS = [
@@ -74,7 +77,7 @@ ROOT_URLCONF = 'Proyekt.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,15 +133,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
-STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'staticfiles'),
 )
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
