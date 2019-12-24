@@ -27,11 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-LANGUAGE_CODE = 'ru-RU'
+LANGUAGE_CODE = 'en-us'
 
 LANGUAGES = [
     ('tr','Turkce'),
     ('ru-RU','Russian'),
+    ('tk','Turkmen'),
 ]
 USE_I18N = True
 USE_L10N = True
@@ -41,6 +42,7 @@ TIME_ZONE = 'UTC'
 USE_TZ = False
 
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
+print(LOCALE_PATHS)
 # Application definition
 
 AUTH_USER_MODEL = "Dokument_Dolanysygy.Ulanyjy" 
