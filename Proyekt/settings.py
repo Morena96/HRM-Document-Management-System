@@ -39,9 +39,9 @@ USE_L10N = True
 
 TIME_ZONE = 'UTC'
 
-USE_TZ = False
+USE_TZ = True
 
-LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
+LOCALE_PATHS = [os.path.join(BASE_DIR, 'local')]
 print(LOCALE_PATHS)
 # Application definition
 
@@ -78,6 +78,7 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+                'django.core.context_processors.i18n',
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
