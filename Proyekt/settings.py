@@ -40,14 +40,7 @@ TIME_ZONE = 'UTC'
 
 USE_TZ = True
 
-<<<<<<< HEAD
-LOCALE_PATHS = [os.path.join(BASE_DIR, 'local')]
-print(LOCALE_PATHS)
-# Application definition
-
-=======
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
->>>>>>> my-temporary-work
 AUTH_USER_MODEL = "Dokument_Dolanysygy.Ulanyjy" 
 
 INSTALLED_APPS = [
