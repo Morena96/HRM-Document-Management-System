@@ -41,9 +41,6 @@ TIME_ZONE = 'UTC'
 USE_TZ = True
 
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
-print(LOCALE_PATHS)
-# Application definition
-
 AUTH_USER_MODEL = "Dokument_Dolanysygy.Ulanyjy" 
 
 INSTALLED_APPS = [
@@ -128,15 +125,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
-STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'staticfiles'),
 )
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
