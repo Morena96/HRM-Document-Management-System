@@ -27,69 +27,69 @@ msgstr ""
 
 #, python-format
 msgid "Successfully deleted %(count)d %(items)s."
-msgstr "%(count)d adet %(items)s başarılı olarak silindi."
+msgstr "%(count)d sany %(items)s üstünlikli pozuldy."
 
 #, python-format
 msgid "Cannot delete %(name)s"
-msgstr "%(name)s silinemiyor"
+msgstr "%(name)s pozulanok"
 
 msgid "Are you sure?"
-msgstr "Emin misiniz?"
+msgstr "Ynamyňyz barmy?"
 
 #, python-format
 msgid "Delete selected %(verbose_name_plural)s"
-msgstr "Seçili %(verbose_name_plural)s nesnelerini sil"
+msgstr "Saýlanan %(verbose_name_plural)s maglumatlary sil"
 
 msgid "Administration"
-msgstr "Yönetim"
+msgstr "Administrasiýa"
 
 msgid "All"
-msgstr "Tümü"
+msgstr "Ählisi"
 
 msgid "Yes"
-msgstr "Evet"
+msgstr "Hawa"
 
 msgid "No"
-msgstr "Hayır"
+msgstr "Ýok"
 
 msgid "Unknown"
-msgstr "Bilinmiyor"
+msgstr "Bilinenok"
 
 msgid "Any date"
-msgstr "Herhangi bir tarih"
+msgstr "Islendik bir sene"
 
 msgid "Today"
-msgstr "Bugün"
+msgstr "Şugün"
 
 msgid "Past 7 days"
-msgstr "Son 7 gün"
+msgstr "Soňky 7 gün"
 
 msgid "This month"
-msgstr "Bu ay"
+msgstr "Bu aý"
 
 msgid "This year"
-msgstr "Bu yıl"
+msgstr "Bu ýyl"
 
 msgid "No date"
-msgstr "Tarih yok"
+msgstr "Sene ýok"
 
 msgid "Has date"
-msgstr "Tarih var"
+msgstr "Sene bar"
 
 #, python-format
 msgid ""
 "Please enter the correct %(username)s and password for a staff account. Note "
 "that both fields may be case-sensitive."
 msgstr ""
-"Lütfen görevli hesabı için %(username)s ve parolanızı doğru girin. İki "
-"alanın da  büyük küçük harfe duyarlı olabildiğini unutmayın."
+"Bagyşlaň ulanyjy adyňyzy %(username)s we parolyňyzy dogry giriň. İki "
+"ýeriň hem uly kiçi harplaryna ünsli serediň."
 
 msgid "Action:"
-msgstr "Eylem:"
+msgstr "herket:"
 
 #, python-format
 msgid "Add another %(verbose_name)s"
-msgstr "Başka bir %(verbose_name)s ekle"
+msgstr "Başka bir %(verbose_name)s goş"
 
 msgid "Remove"
 msgstr "Aýyrmak"
@@ -104,76 +104,76 @@ msgid "Deletion"
 msgstr "Pozmak"
 
 msgid "action time"
-msgstr "eylem zamanı"
+msgstr "hereket wagty"
 
 msgid "user"
 msgstr "ulanyjy"
 
 msgid "content type"
-msgstr "içerik türü"
+msgstr "maglumat görnüşi"
 
 msgid "object id"
-msgstr "nesne kimliği"
+msgstr "obýekt kimligi"
 
 #. Translators: 'repr' means representation
 #. (https://docs.python.org/library/functions.html#repr)
 msgid "object repr"
-msgstr "nesne kodu"
+msgstr "obýekt kody"
 
 msgid "action flag"
-msgstr "eylem işareti"
+msgstr "hereket yşaraty"
 
 msgid "change message"
-msgstr "iletiyi değiştir"
+msgstr "sms çalyş"
 
 msgid "log entry"
 msgstr "günlük girdisi"
 
 msgid "log entries"
-msgstr "günlük girdisi"
+msgstr "günlük girdi çykdysy"
 
 #, python-format
 msgid "Added “%(object)s”."
-msgstr "“%(object)s” eklendi."
+msgstr "“%(object)s” goşuldy."
 
 #, python-format
 msgid "Changed “%(object)s” — %(changes)s"
-msgstr "“%(object)s” değiştirildi — %(changes)s"
+msgstr "“%(object)s” üýtgedildi — %(changes)s"
 
 #, python-format
 msgid "Deleted “%(object)s.”"
-msgstr "“%(object)s” silindi."
+msgstr "“%(object)s” pozuldy."
 
 msgid "LogEntry Object"
-msgstr "LogEntry Nesnesi"
+msgstr "LogEntry maglumaty"
 
 #, python-brace-format
 msgid "Added {name} “{object}”."
-msgstr "{name} “{object}” eklendi."
+msgstr "{name} “{object}” goşuldy."
 
 msgid "Added."
-msgstr "Eklendi."
+msgstr "Goşuldy."
 
 msgid "and"
-msgstr "ve"
+msgstr "we"
 
 #, python-brace-format
 msgid "Changed {fields} for {name} “{object}”."
-msgstr "{name} “{object}” için {fields} değiştirildi."
+msgstr "{name} “{object}” üçin {fields} üýtgedildi."
 
 #, python-brace-format
 msgid "Changed {fields}."
-msgstr "{fields} değiştirildi."
+msgstr "{fields} üýtgedildi."
 
 #, python-brace-format
 msgid "Deleted {name} “{object}”."
-msgstr "{name} “{object}” silindi."
+msgstr "{name} “{object}” pozuldy."
 
 msgid "No fields changed."
-msgstr "Değiştirilen alanlar yok."
+msgstr "Üýtgetme ýok."
 
 msgid "None"
-msgstr "Hiçbiri"
+msgstr "Hiçisi"
 
 msgid "Hold down “Control”, or “Command” on a Mac, to select more than one."
 msgstr ""
@@ -181,41 +181,41 @@ msgstr ""
 
 #, python-brace-format
 msgid "The {name} “{obj}” was added successfully."
-msgstr "{name} “{obj}” başarılı olarak eklendi."
+msgstr "{name} “{obj}” üstünlikli goşuldy."
 
 msgid "You may edit it again below."
-msgstr "Aşağıdan bunu tekrar düzenleyebilirsiniz."
+msgstr "Aşakda täzeden üýtgeşme girizibilýäňiz."
 
 #, python-brace-format
 msgid ""
 "The {name} “{obj}” was added successfully. You may add another {name} below."
 msgstr ""
-"{name} “{obj}” başarılı olarak eklendi. Aşağıda başka bir {name} "
-"ekleyebilirsiniz."
+"{name} “{obj}” üstünlikli goşuldy. Aşakda başka bir {name} "
+"goşup bilýäňiz."
 
 #, python-brace-format
 msgid ""
 "The {name} “{obj}” was changed successfully. You may edit it again below."
 msgstr ""
-"{name} “{obj}” başarılı olarak değiştirildi. Aşağıda tekrar "
-"düzenleyebilirsiniz."
+"{name} “{obj}” üstünlikli goşuldy. Aşakda täzeden  "
+"üýtgeşme girizip bilýäňiz.."
 
 #, python-brace-format
 msgid "The {name} “{obj}” was added successfully. You may edit it again below."
 msgstr ""
-"{name} “{obj}” başarılı olarak eklendi. Aşağıda tekrar düzenleyebilirsiniz."
+"{name} “{obj}” üstünlikli goşuldy. Aşakda täzeden üýtgeşme girizip bilýäňiz."
 
 #, python-brace-format
 msgid ""
 "The {name} “{obj}” was changed successfully. You may add another {name} "
 "below."
 msgstr ""
-"{name} “{obj}” başarılı olarak değiştirildi. Aşağıda başka bir {name} "
-"ekleyebilirsiniz."
+"{name} “{obj}” üstünlikli üýtgedildi. Aşakda başga bir {name} "
+"goşup bilýäňiz."
 
 #, python-brace-format
 msgid "The {name} “{obj}” was changed successfully."
-msgstr "{name} “{obj}” başarılı olarak değiştirildi."
+msgstr "{name} “{obj}” üstünlikli üýtgeşme girizildi."
 
 msgid ""
 "Items must be selected in order to perform actions on them. No items have "
@@ -225,11 +225,11 @@ msgstr ""
 "öğe değiştirilmedi."
 
 msgid "No action selected."
-msgstr "Seçilen eylem yok."
+msgstr "Saýlanan hereket ýok."
 
 #, python-format
 msgid "The %(name)s “%(obj)s” was deleted successfully."
-msgstr "%(name)s “%(obj)s” başarılı olarak silindi."
+msgstr "%(name)s “%(obj)s” üstünlikli pozuldy."
 
 #, python-format
 msgid "%(name)s with ID “%(key)s” doesn’t exist. Perhaps it was deleted?"
@@ -237,34 +237,34 @@ msgstr "“%(key)s” kimliği olan %(name)s mevcut değil. Belki silinmiş midi
 
 #, python-format
 msgid "Add %s"
-msgstr "%s ekle"
+msgstr "%s goş"
 
 #, python-format
 msgid "Change %s"
-msgstr "%s değiştir"
+msgstr "%s üýtget"
 
 #, python-format
 msgid "View %s"
 msgstr "%s görkez"
 
 msgid "Database error"
-msgstr "Veritabanı hatası"
+msgstr "Maglumatlar bazasy ýalňyşlygy"
 
 #, python-format
 msgid "%(count)s %(name)s was changed successfully."
 msgid_plural "%(count)s %(name)s were changed successfully."
-msgstr[0] "%(count)s adet %(name)s başarılı olarak değiştirildi."
-msgstr[1] "%(count)s adet %(name)s başarılı olarak değiştirildi."
+msgstr[0] "%(count)s sany %(name)s üstünlikli çalyşyldy."
+msgstr[1] "%(count)s sany %(name)s üstünlikli çalyşyldy."
 
 #, python-format
 msgid "%(total_count)s selected"
 msgid_plural "All %(total_count)s selected"
-msgstr[0] "%(total_count)s nesne seçildi"
-msgstr[1] "Tüm %(total_count)s nesne seçildi"
+msgstr[0] "%(total_count)s maglumat saýlandy"
+msgstr[1] "Ähli %(total_count)s maglumat saýlandy"
 
 #, python-format
 msgid "0 of %(cnt)s selected"
-msgstr "0 / %(cnt)s nesne seçildi"
+msgstr "0 / %(cnt)s maglumat saýlandy"
 
 #, python-format
 msgid "Change history: %s"
@@ -281,8 +281,8 @@ msgid ""
 "Deleting %(class_name)s %(instance)s would require deleting the following "
 "protected related objects: %(related_objects)s"
 msgstr ""
-"%(class_name)s %(instance)s silinmesi aşağıda korunan ilgili nesnelerin de "
-"silinmesini gerektirecektir: %(related_objects)s"
+"%(class_name)s %(instance)s maglumatlaryň pozulmagy aşakdaky goralan maglumatlaryň hem "
+"hem pozulmagyna getirýär: %(related_objects)s"
 
 msgid "Django site admin"
 msgstr "Django site yöneticisi"
@@ -291,62 +291,62 @@ msgid "Django administration"
 msgstr "Django yönetimi"
 
 msgid "Site administration"
-msgstr "Site yönetimi"
+msgstr "Sahypa dolandyrylyşy"
 
 msgid "Log in"
 msgstr "Içeri gir"
 
 #, python-format
 msgid "%(app)s administration"
-msgstr "%(app)s yönetimi"
+msgstr "%(app)s başlyklaýyn"
 
 msgid "Page not found"
-msgstr "Sayfa bulunamadı"
+msgstr "Gözleýän sahypaňyz tapylmady"
 
 msgid "We’re sorry, but the requested page could not be found."
-msgstr "Üzgünüz, istediğiniz sayfa bulunamadı."
+msgstr "Bagyşlaň, Gözleýän sahypaňyz tapylmady."
 
 msgid "Home"
 msgstr "Baş sahypa"
 
 msgid "Server error"
-msgstr "Sunucu hatası"
+msgstr "Serwer näsazlygy"
 
 msgid "Server error (500)"
-msgstr "Sunucu hatası (500)"
+msgstr "Serwer näsazlygy (500)"
 
 msgid "Server Error <em>(500)</em>"
-msgstr "Sunucu Hatası <em>(500)</em>"
+msgstr "Serwer näsazlygy <em>(500)</em>"
 
 msgid ""
 "There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
 msgstr ""
-"Bir hata oluştu. Site yöneticilerine e-posta yoluyla bildirildi ve kısa süre "
+"Bir ýalňyşlyk döredi. Site yöneticilerine e-posta yoluyla bildirildi ve kısa süre "
 "içinde düzeltilmelidir. Sabrınız için teşekkür ederiz."
 
 msgid "Run the selected action"
-msgstr "Seçilen eylemi çalıştır"
+msgstr "Saýlanan hereketi çalyş"
 
 msgid "Go"
 msgstr "Git"
 
 msgid "Click here to select the objects across all pages"
-msgstr "Tüm sayfalardaki nesneleri seçmek için buraya tıklayın"
+msgstr "Ähli sahypadaky maglumatlary saýlamak üçin bärik basyň"
 
 #, python-format
 msgid "Select all %(total_count)s %(module_name)s"
-msgstr "Tüm %(total_count)s %(module_name)s nesnelerini seç"
+msgstr "Ähli %(total_count)s %(module_name)s maglumatlary saýlaň"
 
 msgid "Clear selection"
-msgstr "Seçimi temizle"
+msgstr "Saýlananlary aýyr"
 
 msgid ""
 "First, enter a username and password. Then, you’ll be able to edit more user "
 "options."
 msgstr ""
-"Önce, bir kullanıcı adı ve parola girin. Ondan sonra, daha fazla kullanıcı "
-"seçeneğini düzenleyebileceksiniz."
+"Ilki, ulanyjy adyňyzy we parolyňyzy giriň. Ondan soňra, goşmaça ulanyjy "
+"maglumatlaryny girizip bilýäňiz."
 
 msgid "Enter a username and password."
 msgstr "Ulanyjy ady ýada paroly giriň"
@@ -362,7 +362,7 @@ msgstr "Bagyşlaň aşakdaky ýalňyşlyklary düzediň."
 
 #, python-format
 msgid "Enter a new password for the user <strong>%(username)s</strong>."
-msgstr "<strong>%(username)s</strong> kullanıcısı için yeni bir parola girin."
+msgstr "<strong>%(username)s</strong> ulanyjy üçin täze parol giriň."
 
 msgid "Welcome,"
 msgstr "Hoş Geldiňiz,"
@@ -371,33 +371,33 @@ msgid "View site"
 msgstr "Täzele"
 
 msgid "Documentation"
-msgstr "Belgeler"
+msgstr "Dokumentler"
 
 msgid "Log out"
 msgstr "Çykmak"
 
 #, python-format
 msgid "Add %(name)s"
-msgstr "%(name)s ekle"
+msgstr "%(name)s goş"
 
 msgid "History"
-msgstr "Geçmiş"
+msgstr "Taryh"
 
 msgid "View on site"
-msgstr "Sitede görüntüle"
+msgstr "Sahypany görkez"
 
 msgid "Filter"
 msgstr "Filter"
 
 msgid "Remove from sorting"
-msgstr "Sıralamadan kaldır"
+msgstr "Yzygiderligi aýyr"
 
 #, python-format
 msgid "Sorting priority: %(priority_number)s"
-msgstr "Sıralama önceliği: %(priority_number)s"
+msgstr "Yzygiderligi öňürtile: %(priority_number)s"
 
 msgid "Toggle sorting"
-msgstr "Sıralamayı değiştir"
+msgstr "Yzygiderligi üýtget"
 
 msgid "Delete"
 msgstr "Poz"
@@ -408,37 +408,37 @@ msgid ""
 "related objects, but your account doesn't have permission to delete the "
 "following types of objects:"
 msgstr ""
-"%(object_name)s '%(escaped_object)s' nesnesinin silinmesi, ilgili nesnelerin "
-"silinmesi ile sonuçlanacak, ancak hesabınız aşağıdaki nesnelerin türünü "
-"silmek için izine sahip değil."
+"%(object_name)s '%(escaped_object)s' maglumatlaryň pozulmagy, aşakdaky maglumatlaryň "
+"pozulmagy bilen netijelenýär, ýöne aşakdaky maglumat görnülerini "
+"pozmana rugsadyňyz ýok."
 
 #, python-format
 msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
 "following protected related objects:"
 msgstr ""
-"%(object_name)s '%(escaped_object)s' nesnesinin silinmesi, aşağıda korunan "
-"ilgili nesnelerin silinmesini gerektirecek:"
+"%(object_name)s '%(escaped_object)s' maglumatyň pozulmagy, aşakdaky goralan "
+"degişli maglumatlaryň pozulmagyna getirýär:"
 
 #, python-format
 msgid ""
 "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
 "All of the following related items will be deleted:"
 msgstr ""
-"%(object_name)s \"%(escaped_object)s\" nesnesini silmek istediğinize emin "
-"misiniz? Aşağıdaki ilgili öğelerin tümü silinecektir:"
+"%(object_name)s \"%(escaped_object)s\" pozmana çyndanam ynamyňyz "
+"barmy? Aşakdaky oňa degişli maglumatlar hem pozulýandyr:"
 
 msgid "Objects"
 msgstr "Obýektler"
 
 msgid "Yes, I’m sure"
-msgstr "Evet, eminim"
+msgstr "Hawa, makullaýan"
 
 msgid "No, take me back"
-msgstr "Hayır, beni geri götür"
+msgstr "Ýok, meni yza äkit"
 
 msgid "Delete multiple objects"
-msgstr "Birden fazla nesneyi sil"
+msgstr "Birden kän maglumaty poz"
 
 #, python-format
 msgid ""
@@ -446,31 +446,31 @@ msgid ""
 "objects, but your account doesn't have permission to delete the following "
 "types of objects:"
 msgstr ""
-"Seçilen %(objects_name)s nesnelerinin silinmesi, ilgili nesnelerin silinmesi "
-"ile sonuçlanacak, ancak hesabınız aşağıdaki nesnelerin türünü silmek için "
-"izine sahip değil."
+"Saýlanan %(objects_name)s maglumatlaryň pozulmagy, oňa degişli maglumatlaryň "
+"pozulmagy bilen netijelenýär, ýöne hasabyňyz aşakdaky maglumatlary pozmak mümkinçiligine "
+"eýe däl."
 
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would require deleting the following "
 "protected related objects:"
 msgstr ""
-"Seçilen %(objects_name)s nesnelerinin silinmesi, aşağıda korunan ilgili "
-"nesnelerin silinmesini gerektirecek:"
+"Saýlanan %(objects_name)s maglumatlaryň pozulmasy, aşakdaky goralan "
+"zatlaryň pozulmasyna getirýär:"
 
 #, python-format
 msgid ""
 "Are you sure you want to delete the selected %(objects_name)s? All of the "
 "following objects and their related items will be deleted:"
 msgstr ""
-"Seçilen %(objects_name)s nesnelerini silmek istediğinize emin misiniz? "
-"Aşağıdaki nesnelerin tümü ve onların ilgili öğeleri silinecektir:"
+"Saýlanan %(objects_name)s maglumatlary çyndanam pozmak isleýärsiňizmi? "
+"Aşakdaky oňa degişli ähli maglumatlar hem pozulýandyr:"
 
 msgid "View"
 msgstr "Görkez"
 
 msgid "Delete?"
-msgstr "Silinsin mi?"
+msgstr "Pozmakçymy?"
 
 #, python-format
 msgid " By %(filter_title)s "
@@ -487,7 +487,7 @@ msgid "Add"
 msgstr "Goş"
 
 msgid "You don’t have permission to view or edit anything."
-msgstr "Hiçbir şeyi düzenlemek ve göstermek için izne sahip değilsiniz."
+msgstr "Siziň üýtgediş girizmäne ýada görmäne mümkinçiligiňiz ýok."
 
 msgid "Recent actions"
 msgstr "Soňky hereketler"
@@ -496,10 +496,10 @@ msgid "My actions"
 msgstr "Meniň hereketlerim"
 
 msgid "None available"
-msgstr "Mevcut değil"
+msgstr "hiçisi ýok"
 
 msgid "Unknown content"
-msgstr "Bilinmeyen içerik"
+msgstr "Bilinmeyän ýazgy"
 
 msgid ""
 "Something’s wrong with your database installation. Make sure the appropriate "
@@ -515,20 +515,20 @@ msgid ""
 "You are authenticated as %(username)s, but are not authorized to access this "
 "page. Would you like to login to a different account?"
 msgstr ""
-"%(username)s olarak kimlik doğrulamanız yapıldı, ancak bu sayfaya erişmek "
-"için yetkili değilsiniz. Farklı bir hesapla oturum açmak ister misiniz?"
+"%(username)s siziň kimligiňiz tanaldy, ýöne bu sahypa girmek "
+"size mümkin däl. Başga hasap bilen girmek isleýäňizmi?"
 
 msgid "Forgotten your password or username?"
-msgstr "Kullanıcı adınızı veya parolanızı mı unuttunuz?"
+msgstr "Ulanyjy adymy ýada parolymy unutdym!"
 
 msgid "Date/time"
-msgstr "Tarih/saat"
+msgstr "Sene/wagt"
 
 msgid "User"
 msgstr "Ulanyjy"
 
 msgid "Action"
-msgstr "Eylem"
+msgstr "Hereket"
 
 msgid ""
 "This object doesn’t have a change history. It probably wasn’t added via this "
@@ -538,13 +538,13 @@ msgstr ""
 "aracılığıyla eklenmedi."
 
 msgid "Show all"
-msgstr "Tümünü göster"
+msgstr "Ählisini görkez"
 
 msgid "Save"
-msgstr "Kaydet"
+msgstr "Ýatda sakla"
 
 msgid "Popup closing…"
-msgstr "Açılır pencere kapanıyor…"
+msgstr "Açylan penjere ýapylýar…"
 
 msgid "Search"
 msgstr "Gözle"
@@ -552,52 +552,52 @@ msgstr "Gözle"
 #, python-format
 msgid "%(counter)s result"
 msgid_plural "%(counter)s results"
-msgstr[0] "%(counter)s sonuç"
-msgstr[1] "%(counter)s sonuç"
+msgstr[0] "%(counter)s netije"
+msgstr[1] "%(counter)s netije"
 
 #, python-format
 msgid "%(full_result_count)s total"
-msgstr "toplam %(full_result_count)s"
+msgstr "umumy %(full_result_count)s"
 
 msgid "Save as new"
-msgstr "Yeni olarak kaydet"
+msgstr "Ýatda sakla"
 
 msgid "Save and add another"
-msgstr "Kaydet ve başka birini ekle"
+msgstr "Ýatda sakla we täze goşjak"
 
 msgid "Save and continue editing"
-msgstr "Kaydet ve düzenlemeye devam et"
+msgstr "Ýatda sakla we üýtgetmäne dowam"
 
 msgid "Save and view"
-msgstr "Kaydet ve göster"
+msgstr "Ýatda sakla we görkez"
 
 msgid "Close"
 msgstr "Ýap"
 
 #, python-format
 msgid "Change selected %(model)s"
-msgstr "Seçilen %(model)s değiştir"
+msgstr "Saýlananlary %(model)s çalyş"
 
 #, python-format
 msgid "Add another %(model)s"
-msgstr "Başka bir %(model)s ekle"
+msgstr "Başka bir %(model)s goş"
 
 #, python-format
 msgid "Delete selected %(model)s"
-msgstr "Seçilen %(model)s sil"
+msgstr "Saýlanan %(model)s poz"
 
 msgid "Thanks for spending some quality time with the Web site today."
 msgstr ""
-"Bugün Web sitesinde biraz güzel zaman geçirdiğiniz için teşekkür ederiz."
+"Bugin websahypamyzda gowy wagt geçireniňiz üçin minnetdar"
 
 msgid "Log in again"
-msgstr "Tekrar oturum aç"
+msgstr "Täzeden içeri gir"
 
 msgid "Password change"
 msgstr "Paroly çalyşmak"
 
 msgid "Your password was changed."
-msgstr "Parolanız değiştirildi."
+msgstr "Parolanynyz üstünlikli çalşyldy"
 
 msgid ""
 "Please enter your old password, for security’s sake, and then enter your new "
@@ -607,10 +607,10 @@ msgstr ""
 "parolanızı iki kere girin böylece doğru olarak yazdığınızı doğrulayabilelim."
 
 msgid "Change my password"
-msgstr "Parolamı değiştir"
+msgstr "Parolamy çalyş"
 
 msgid "Password reset"
-msgstr "Parolayı sıfırla"
+msgstr "Parolymy nolla"
 
 msgid "Your password has been set.  You may go ahead and log in now."
 msgstr "Parolanız ayarlandı. Şimdi devam edebilir ve oturum açabilirsiniz."
@@ -622,14 +622,14 @@ msgid ""
 "Please enter your new password twice so we can verify you typed it in "
 "correctly."
 msgstr ""
-"Lütfen yeni parolanızı iki kere girin böylece böylece doğru olarak "
-"yazdığınızı doğrulayabilelim."
+"Bagyşlaň täze parolyňyzy 2 gezek giriziň "
+"yazanyňyzy dogrulap bilmegimiz üçin."
 
 msgid "New password:"
-msgstr "Yeni parola:"
+msgstr "Taze parol:"
 
 msgid "Confirm password:"
-msgstr "Parolayı onayla:"
+msgstr "Parola gaýtalaň:"
 
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
@@ -666,12 +666,13 @@ msgstr "Lütfen şurada belirtilen sayfaya gidin ve yeni bir parola seçin:"
 msgid "Your username, in case you’ve forgotten:"
 msgstr "Unutma ihtimalinize karşı, kullanıcı adınız:"
 
+
 msgid "Thanks for using our site!"
-msgstr "Sitemizi kullandığınız için teşekkürler!"
+msgstr "Websahypamyzy ulanýanyňyz üçin sagboluň!"
 
 #, python-format
 msgid "The %(site_name)s team"
-msgstr "%(site_name)s ekibi"
+msgstr "%(site_name)s grupbasy"
 
 msgid ""
 "Forgotten your password? Enter your email address below, and we’ll email "
@@ -681,37 +682,37 @@ msgstr ""
 "ayarlamak için talimatları e-posta ile gönderelim."
 
 msgid "Email address:"
-msgstr "E-posta adresi:"
+msgstr "E-poçta adresi:"
 
 msgid "Reset my password"
-msgstr "Parolamı sıfırla"
+msgstr "Parolamy nolla"
 
 msgid "All dates"
-msgstr "Tüm tarihler"
+msgstr "Ähli seneler"
 
 #, python-format
 msgid "Select %s"
-msgstr "%s seç"
+msgstr "%s saýlaň"
 
 #, python-format
 msgid "Select %s to change"
-msgstr "Değiştirmek için %s seçin"
+msgstr "Üýtgetmek üçin %s saýlaň"
 
 #, python-format
 msgid "Select %s to view"
-msgstr "Göstermek için %s seçin"
+msgstr "Görkezmek üçin %s saýlaň"
 
 msgid "Date:"
-msgstr "Tarih:"
+msgstr "Sene:"
 
 msgid "Time:"
-msgstr "Saat:"
+msgstr "Sagat:"
 
 msgid "Lookup"
-msgstr "Arama"
+msgstr "Gözleg"
 
 msgid "Currently:"
-msgstr "Şu anda:"
+msgstr "Şu wagtda:"
 
 msgid "Change:"
-msgstr "Değiştir:"
+msgstr "Çalyş:"

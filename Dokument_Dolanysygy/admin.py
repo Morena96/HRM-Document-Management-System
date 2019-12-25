@@ -31,7 +31,7 @@ admin.site.register(Bolumler,BolumlerAdmin)
 class FileAdmin(admin.ModelAdmin):
     list_display = ['ady','eýesi','welayaty','edarasy','bölümi','görnüşi','dokument'
     ,'döredilen_senesi','üýgedilen_senesi']
-    fields = ('ady','görnüşi','dokument','mazmuny')
+    fields = ('ady','görnüşi','dokument','mazmuny_tr','mazmuny_ru')
     date_hierarchy = 'döredilen_senesi'
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
 #        if db_field.name == "welaýaty" and (not request.user.is_superuser):
@@ -79,7 +79,7 @@ admin.site.register(File,FileAdmin)
 
 class HasabatAdmin(admin.ModelAdmin):
     list_display = ['ady','bölümi']
-
+    fields=['ady_tr','ady_ru','bölümi']
 admin.site.register(Hasabat,HasabatAdmin)
 
 @receiver(post_save, sender=Ulanyjy)

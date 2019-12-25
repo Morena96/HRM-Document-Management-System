@@ -53,7 +53,7 @@ class File(models.Model):
     bölümi              = models.ForeignKey(Bolumler,on_delete=models.CASCADE)
     dokument            = models.FileField()
     görnüşi             = models.ForeignKey(Hasabat,on_delete=models.CASCADE)
-    mazmuny             = models.TextField()
+    mazmuny             = models.TextField(blank=True,null=True)
     döredilen_senesi    = models.DateTimeField(auto_now_add=True)
     üýgedilen_senesi    = models.DateTimeField(auto_now=True)
 

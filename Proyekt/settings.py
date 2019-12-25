@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-LANGUAGE_CODE = 'tr'
+LANGUAGE_CODE = 'ru'
 
 LANGUAGES = [
     ('tr','Turkce'),
@@ -43,7 +43,11 @@ USE_TZ = True
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 AUTH_USER_MODEL = "Dokument_Dolanysygy.Ulanyjy" 
 
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'tr'
+MODELTRANSLATION_LANGUAGES = ('tr', 'ru')
+
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
