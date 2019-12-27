@@ -47,7 +47,10 @@ class FileAdmin(admin.ModelAdmin):
             return qs
         if(request.user.groups.filter(name='Ulanyjy').exists()):
             return qs.filter(eýesi=request.user)
-        return qs.filter(eýesi__döreden=request.user)
+        if(request.user.groups.filter(name='Admin').exists()):
+            return qs.filter(eýesi__döreden=request.user)
+        print(request.user.edarasy)
+        return qs.filter(edarasy=request.user.edarasy)
 
     def save_model(self, request, obj, form, change):
         obj.eýesi = request.user
@@ -82,20 +85,20 @@ class HasabatAdmin(admin.ModelAdmin):
     fields=['ady_tr','ady_ru','bölümi']
 admin.site.register(Hasabat,HasabatAdmin)
 
-@receiver(post_save, sender=Ulanyjy)
-def create_user_profile(sender, instance, created, **kwargs):
-    if created:
-        if instance.döreden.is_superuser:
-            instance.groups.add(Group.objects.get(name='Admin'))
-        else:
-            print('bb')
-            instance.groups.add(Group.objects.get(name='Ulanyjy'))
+#@receiver(post_save, sender=Ulanyjy)
+#def create_user_profile(sender, instance, created, **kwargs):
+#    if created:
+#        if instance.döreden.is_superuser:
+#            instance.groups.add(Group.objects.get(name='Admin'))
+#        else:
+#            print('bb')
+#            instance.groups.add(Group.objects.get(name='Ulanyjy'))
 
 class UlanyjyAdmin(UserAdmin):
     list_display = ['username','ady','edarasy','welayaty','bölümi','döreden','mac_adresi']#
     fieldsets = (
     (None, {
-        'fields': ( 'username','ady','edarasy','bölümi','password','mac_adresi')
+        'fields': ( 'username','ady','edarasy','bölümi','password','mac_adresi','groups')
     }),
     ('Goşmaça Maglumatlar', {
         'classes': ('collapse',),
@@ -108,10 +111,17 @@ class UlanyjyAdmin(UserAdmin):
 #            print(request.user.welaýaty)
 #            kwargs["initial"] = request.user.welaýaty
 #            kwargs['disabled'] = True
+
         if db_field.name == "edarasy" and (not request.user.is_superuser):
             kwargs['disabled'] = True
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
-
+    def formfield_for_manytomany(self, db_field, request, **kwargs):
+        if db_field.name == "groups":
+            if(not request.user.is_superuser):
+                kwargs['queryset']=Group.objects.filter(name='Ulanyjy')
+            else:
+                kwargs['queryset']=Group.objects.exclude(name='Ulanyjy')
+        return super().formfield_for_manytomany(db_field, request, **kwargs)
     def get_queryset(self, request):
         qs = super().get_queryset(request)
         if request.user.is_superuser:
@@ -122,8 +132,12 @@ class UlanyjyAdmin(UserAdmin):
         if not obj.döreden:
             obj.döreden = request.user
         obj.is_staff=True
-        if not obj.edarasy and (not request.user.is_superuser):
+        if request.user.edarasy:
             obj.edarasy=request.user.edarasy
+        if not obj.edarasy and request.user.is_superuser:
+            obj.edarasy=Edaralar.objects.all()[0]
+        if not obj.bölümi and request.user.groups.filter(name='Admin').exists():
+            obj.bölümi=Bolumler.objects.all()[0]
         super().save_model(request, obj, form, change)
     def welayaty(self,obj):
         if obj.edarasy:
