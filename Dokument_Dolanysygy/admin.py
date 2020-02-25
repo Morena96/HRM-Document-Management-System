@@ -8,9 +8,9 @@ from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import gettext_lazy as _
 # Register your models here.
 
+admin.site.site_header = "asd"
+#admin.site.index_title = "Stan"
 admin.site.site_title = "Edara"
-admin.site.site_header = "DOKUMENT DOLANYŞYGY"
-admin.site.index_title = "Title"
 
 class WelayatlarAdmin(admin.ModelAdmin):
     pass

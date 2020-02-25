@@ -6,16 +6,30 @@
 <!-- custom filter module -->
 {% load i18n_switcher %}
 
+
+{% block branding %}
+<h1 id="site-name" style="text-align:center">
+        <a href="{% url 'admin:index' %}">
+            <img src="{% static 'images/logo_en.png' %}" height="40px" />
+        </a>
+        STANDARTLAŞDYRYLAN HASABAT ULGAMY
+    </h1>
+{% endblock %}
+{% block title %}{%if request.user.edarasy%}{{ request.user.edarasy }}{%else%}Admin{%endif%}
+| {{ site_title|default:_('NEW TITLE') }}{% endblock %}
 {% block extrahead %}
-    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/custom_admin.css' %}"/>
 {% endblock %}
 
 {% block userlinks %}
-    <a href="{{ request|switch_i18n:'tr' }}">
+    
+    <a href="{{ request|switch_i18n:'tr' }}" style="font-size: 18px">
+        TM
         <img width="20px"  class="i18n_flag" src="{% static 'images/turkmenistan-flag-button-round-icon-128.png' %}"/>
     </a> /
-    <a href="{{ request|switch_i18n:'ru' }}">
+    <a href="{{ request|switch_i18n:'ru' }}" style="font-size: 18px">
+        RU
         <img width="20px" class="i18n_flag" src="{% static 'images/russia-flag-3d-round-icon-128.png' %}"/>
     </a> /
     {% if user.is_active and user.is_staff %}
@@ -29,3 +43,4 @@
     {% endif %}
     <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
 {% endblock %}
+{% block nav-global %}{% endblock %}
