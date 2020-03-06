@@ -43,13 +43,12 @@ class FileAdmin(admin.ModelAdmin):
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
     def get_queryset(self, request):
         qs = super().get_queryset(request)
-        if request.user.is_superuser:
+        if request.user.is_superuser or request.user.groups.filter(name='Gozegci').exists:
             return qs
         if(request.user.groups.filter(name='Ulanyjy').exists()):
             return qs.filter(eýesi=request.user)
         if(request.user.groups.filter(name='Admin').exists()):
             return qs.filter(eýesi__döreden=request.user)
-        print(request.user.edarasy)
         return qs.filter(edarasy=request.user.edarasy)
 
     def save_model(self, request, obj, form, change):
